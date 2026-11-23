@@ -512,3 +512,80 @@ footer {
     }
 
 }
+
+
+/* Organizational Experience */
+.organization {
+    padding: 80px 10%;
+}
+
+.organization-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.organization-card {
+    background: #151515;
+    border: 1px solid #292929;
+    border-radius: 14px;
+    padding: 28px;
+    transition: 0.3s ease;
+}
+
+.organization-card:hover {
+    transform: translateY(-6px);
+    border-color: #00bcd4;
+}
+
+.organization-date {
+    color: #00bcd4;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.organization-content h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.organization-content h4 {
+    color: #00bcd4;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.organization-content p {
+    color: #b5b5b5;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.organization-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.organization-tags span {
+    background: #222;
+    color: #00bcd4;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .organization-container {
+        grid-template-columns: 1fr;
+    }
+
+    .organization {
+        padding: 60px 6%;
+    }
+}
